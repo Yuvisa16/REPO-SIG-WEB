@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - YUVISA MARIA CACERES</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+         body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            margin: 0;
+            background: #ffeded;
+            padding-top: 55px; /* Espacio para los botones superiores */
+        }
+        .text p {
+        text-align: justify;
+        }
+        .text h2 {
+        color: #0056b3; /* Azul para títulos */
+        }
+        .image-caption {
+            position: absolute;
+            bottom: 30%;
+            left: 0;
+            width: 20%;
+            color: #ffffff; /* Texto blanco */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar la legibilidad */
+            visibility: hidden; /* Oculto por defecto */
+            text-align: center;
+            padding: 5px 0; /* Espaciado interior */
+        }
+        .image-container:hover .image-caption {
+            visibility: visible; /* Muestra el texto al pasar el cursor */
+        }
+        .video {
+            width: 500px; /* Ajuste para que el video ocupe el ancho del contenedor */
+            border-radius: 5%;
+            margin: 20px;
+            border: 7px solid #053e7a;
+        }
+        .video1 {
+            width: 250px; /* Ajuste para que el video ocupe el ancho del contenedor */
+            border-radius: 5%;
+            margin: 20px;
+            border: 7px solid #053e7a;
+        }
+        .video2 {
+            width: 250px; /* Ajuste para que el video ocupe el ancho del contenedor */
+            border-radius: 5%;
+            margin: 15px;
+            border: 7px solid #053e7a;
+            margin-bottom: 70px; /* Margen entre el carrusel y los botones inferiores */
+        }
+        .top-buttons {
+            background-color: rgba(64, 137, 247, 0.897);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .top-buttons a {
+            color: #053e7a;
+            margin: 0 10px;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 3px solid #fd5304;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .top-buttons a:hover {
+            color: #fd5304;
+            border-color: #053e7a;
+        }
+        .content-container {
+            margin-top: 30px;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .section-reverse {
+            flex-direction: row-reverse;
+        }
+        .photo {
+            border-radius: 30%;
+            width: 350px; /* Fotos más grandes */
+            height: auto;
+            margin: 20px;
+            border: 7px solid #053e7a;
+        }
+        .text {
+            flex-grow: 1;
+            padding: 20px; /* Aumentar el espacio dentro del cuadro de texto */
+            margin: 15px; /* Espacio alrededor del cuadro de texto */
+            background-color: rgba(255, 255, 255, 0.80);
+            border: 5px solid #053e7a;
+            border-radius: 15px; /* Puedes ajustar el radio del borde para más o menos curvatura */
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px; /* Ajustar el tamaño de la letra, 18px es un tamaño legible común */
+        }
+        .titulo {
+            margin-bottom: -10px; /* Reducir espacio después del título */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navigation-buttons {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(64, 137, 247, 0.897);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        .navigation-buttons a {
+            color: #053e7a;
+            margin: 0 10px;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 3px solid #fd5304;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .navigation-buttons a:hover {
+            color: #fd5304;
+            border-color: #053e7a;
+        }
+        .banner {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1; /* Detrás del contenido */
+            opacity: 0.35; /* Opacidad */
+        }
+        h1.animated-name {
+            font-weight: bold; /* Negrita */
+            color: #012447; /* Azul oscuro */
+            animation: pulse 3s infinite alternate;
+            font-family: 'Georgia', serif; /* Cambio de fuente para el nombre */
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.9); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(0.9); }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-buttons">
+        <!-- Botones de navegación superiores -->
+        <a href="INDEX.html">INICIO</a>
+        <a href="PRESENTACION.html">PRESENTACIÓN</a>
+        <a href="EXPERIENCIA.html">EXPERIENCIA</a>
+        <a href="CURRICULUM.html">CURRICULUM</a>
+        <a href="GEOVISOR.html">GEOVISOR</a>
+    </div>
+    <!-- Banner como fondo fijo -->
+    <img src="C:\Users\yuviz\Downloads\TALLER_1_SIG_WEB\COMPLEMENTOS\Banner_1.jpg" alt="Banner" class="banner">
+    <!-- Contenedor del contenido principal -->
+    <div class="content-container">
+        <!-- Columna para la foto de perfil y el nombre -->
+        <div class="titulo">
+            <h1 class="animated-name">PERSONAL</h1>
+        </div>
+        <!-- Sección con foto 1 y texto -->
+        <div class="section section">
+            <div class="image-container">
+                <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_15.jpg" alt="Foto 15" class="photo">
+                <p class="image-caption">Fuente: Yuvisa Maria Caceres</p>
+            </div>
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_16.jpg" alt="Foto 16" class="photo">            
+        </div>
+            <div class="section section-reverse">
+            <video controls class="video">
+                <source src="C:\\Users\\yuviz\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Video_0.mp4" type="video/mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="text">
+                <h2>Vida Personal y Pasiones</h2>
+                <p>Mi vida es una vibrante mezcla de emociones intensas y dosis constantes de adrenalina. Soy una apasionada de los deportes extremos, y he experimentado la indescriptible sensación de tocar el cielo con mis propias manos durante caídas libres en paracaidismo, así como la emoción pura y vertiginosa del bodyjumping.<p>
+                
+                <p>Pero mi espíritu aventurero no se limita al éxtasis del aire; en tierra firme, encuentro mi segundo hogar en los desafiantes senderos de trail y las emocionantes rutas de mountain bike. No es solo en los paisajes naturales donde busco y encuentro la adrenalina; en el gimnasio y durante las rutinas de crossfit, me someto a entrenamientos intensos. Cada gota de sudor es un tributo a mi inquebrantable compromiso con la excelencia, forjando en mí una disciplina de hierro y una fortaleza inquebrantable.</p>
+            </div>            
+        </div> 
+        <!-- Sección con foto 2 y texto -->
+        <div class="section section-reverse">
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_17.jpg" alt="Foto 17" class="photo">
+            <div class="image-container">
+                <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_18.jpg" alt="Foto 18" class="photo">
+                <p class="image-caption">Fuente: Yuvisa Maria Caceres</p>
+            </div>
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_19.jpg" alt="Foto 19" class="photo">
+        </div>
+        <div class="section">
+            <video controls class="video1">
+                <source src="C:\\Users\\yuviz\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Video_1.mp4" type="video/mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="text">
+                <h2>Familia y Objetivos Personales</h2>
+                <p>En el corazón de mi universo, el epicentro de mi fuerza y determinación, se encuentra mi hijo, el faro que ilumina cada paso que doy. Los momentos que compartimos son mi oasis, un preciado refugio del ajetreo diario que renueva mi espíritu y fortalece mi propósito. Con mis ojos fijos en el futuro, estoy dedicada a alcanzar mi objetivo más cercano: completar mi carrera en Ingeniería Topográfica. Esta meta, que ya casi puedo tocar con mis manos, es el fundamento sobre el cual planeo construir el resto de mis sueños.</p>               
+                <p>El anhelo de crear mi propia empresa no es solo una aspiración; es una llama que arde con intensidad dentro de mí, impulsándome hacia adelante. Cada avance académico y profesional es un paso más hacia la realización de esta visión. Con cada desafío superado y cada éxito alcanzado en mi camino educativo y profesional, veo cómo mi sueño de emprender y contribuir significativamente a mi campo se va materializando poco a poco. Este sueño, combinado con el amor incondicional y la inspiración que recibo de mi hijo, es la fuerza motriz que me guía hacia un futuro lleno de posibilidades y logros.</p>
+            </div>
+        </div>
+        <!-- Sección con foto 3 y texto -->
+        <div class="section">
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_20.jpg" alt="Foto 20" class="photo">
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_21.jpg" alt="Foto 21" class="photo">
+            <img src="C:\\Users\\yuviz\\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Foto_22.jpg" alt="Foto 22" class="photo">
+        </div>
+        <div class="section section-reverse">
+            <video controls class="video2">
+                <source src="C:\\Users\\yuviz\Downloads\\TALLER_1_SIG_WEB\\FOTOS\\Video_2.mp4" type="video/mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="text">
+                <h2>Aspiraciones y Metas a Futuro</h2>
+                <p>Mi sed de crecimiento intelectual es insaciable. Siempre mirando hacia lo más alto en el ámbito académico, me he propuesto alcanzar la Maestría en Geotecnia como mi meta a mediano plazo. Este objetivo académico va mucho más allá de ser solo un sueño; es un cimiento esencial en la edificación de mi visión empresarial. Cada obstáculo que supero y cada adversidad que enfrento no son más que los ladrillos con los que estoy construyendo mi futuro; un futuro donde mi empresa no solo será el reflejo de mi pasión y dedicación por la ingeniería, sino que también se convertirá en un legado y una fuente de inspiración para futuras generaciones.</p>
+                <p>En este camino, cada logro académico y profesional es un paso más hacia la concreción de esa visión. Estoy comprometida con la excelencia, no solo para satisfacer mis aspiraciones personales, sino para establecer un precedente que motive a otros a perseguir sus sueños con determinación y perseverancia. Al visualizar mi empresa, no solo veo una entidad comercial exitosa, sino una plataforma que promueva la innovación, el desarrollo sostenible y, sobre todo, que impulse el crecimiento de aquellos que formarán parte de ella. Este es el legado que aspiro a dejar: una huella imborrable que inspire a las generaciones venideras a construir un mejor futuro.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Botones de navegación inferiores -->
+    <div class="navigation-buttons">
+        <a href="EXPERIENCIA.html">ATRÁS</a>
+        <a href="CURRICULUM.html">ADELANTE</a>
+    </div>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>
