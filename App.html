@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
-            background: url('https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/Bomberos1.jpg') no-repeat center center fixed;
+            background: url('https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/Bomberos.jpg') no-repeat center center fixed;
             background-size: cover;
             position: relative;
         }
@@ -34,16 +34,21 @@
             text-align: center;
             position: relative;
             z-index: 2;
-            color: white;
+            background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo con un poco de transparencia */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             font-size: 24px; /* Tamaño del título más pequeño */
+            margin-bottom: 20px;
+            color: white;
         }
 
         .logo {
-            width: 200px; /* Hacer la imagen un poco más grande */
-            height: 200px;
+            width: 150px; /* Hacer la imagen un poco más grande */
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
@@ -59,10 +64,13 @@
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Relieve del botón */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .button:hover {
             background-color: #c9302c; /* Color más oscuro al pasar el cursor */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Mayor relieve al pasar el cursor */
         }
     </style>
 </head>
