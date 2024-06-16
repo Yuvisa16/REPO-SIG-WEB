@@ -11,29 +11,50 @@
             height: 100%;
             width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
+            background: url('https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/Bomberos.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparencia del fondo */
+            z-index: 1;
         }
 
         .container {
             text-align: center;
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        h1 {
+            font-size: 24px; /* Tamaño del título más pequeño */
         }
 
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 150px; /* Hacer la imagen un poco más grande */
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 15px 30px; /* Botón más grande */
+            font-size: 18px; /* Letras más grandes */
+            font-weight: bold; /* Letras en negrita */
             color: #fff;
-            background-color: #007bff;
+            background-color: #d9534f; /* Fondo del botón rojo */
             border: none;
             border-radius: 5px;
             text-decoration: none;
@@ -41,7 +62,7 @@
         }
 
         .button:hover {
-            background-color: #0056b3;
+            background-color: #c9302c; /* Color más oscuro al pasar el cursor */
         }
     </style>
 </head>
