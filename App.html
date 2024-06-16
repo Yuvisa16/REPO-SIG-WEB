@@ -14,42 +14,35 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
-            background: url('https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/Bomberos.jpg') no-repeat center center fixed;
-            background-size: cover;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparencia del fondo */
-            z-index: 1;
+            background-color: #d9534f; /* Fondo rojo */
         }
 
         .container {
             text-align: center;
-            position: relative;
-            z-index: 2;
-            background-color: rgba(255, 0, 0, 0.8); /* Fondo rojo con un poco de transparencia */
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 24px; /* Tamaño del título más pequeño */
+            font-size: 24px; /* Tamaño del título */
             margin-bottom: 20px;
             color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
         }
 
         .logo {
             width: 150px; /* Hacer la imagen un poco más grande */
             height: 150px;
             border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .background-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
 
@@ -78,6 +71,7 @@
     <div class="container">
         <h1>Bienvenido al Geovisor de Bomberos del Valle del Cauca</h1>
         <img src="https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/4.jpg" alt="Logo del Geovisor" class="logo">
+        <img src="https://raw.githubusercontent.com/Yuvisa16/REPO-SIG-WEB/Portal-WEB/FOTOS/Bomberos.jpg" alt="Fondo del Geovisor" class="background-image">
         <br>
         <a href="https://experience.arcgis.com/experience/2ec2bcf618974a1dba9fb7043c19e936/page/Geovisor/" class="button">Ir al Geovisor</a>
     </div>
